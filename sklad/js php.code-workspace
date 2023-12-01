@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../../Документы/js php"
+		},
+		{
+			"path": "../Новая папка"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "sklad"
+	}
+}

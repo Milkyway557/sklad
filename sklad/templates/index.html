@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
+</head>
+
+<style>
+    .main{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(0, -50%);
+    }
+    .main a{
+        border: 1px solid black;
+        margin-top: 5px;
+    }
+</style>
+
+<body>
+    <div class="container">
+       <div class="d-grid gap-2 col-8 mx-auto col-md-8 align-items-center justify-content-center col-12 ">
+          
+          <a href="{% url 'outwarehouse' %}" class="btn btn-primary btn-lg justify-content-center d-flex align-items-center text-center">Складдан чикариш</a>
+
+          <a href="{% url 'personal' %}" class="btn btn-primary btn-lg  justify-content-center d-flex align-items-center text-center">Персонал учун</a>
+          
+          <a href="{% url 'addproduct' %}" class="btn btn-success btn-lg  justify-content-center d-flex align-items-center text-center">Складга кушиш</a>
+                    
+          <a href="{% url 'userless' %}" class="btn btn-danger btn-lg  justify-content-center d-flex align-items-center text-center">Яроксиз</a>
+          
+          <a href="{% url 'warehouse' %}" class="btn btn-info btn-lg  justify-content-center d-flex align-items-center text-center">Склад</a>
+          
+          <a href="{% url 'summary' %}" class="btn btn-info btn-lg  justify-content-center d-flex align-items-center text-center">Х-Отчёт</a>
+         
+          <a href="{% url 'newitem' %}" class="btn btn-success btn-lg  justify-content-center d-flex align-items-center text-center">Янги товар кушиш</a>
+
+        </div>
+    </div>
+
+
+    <style>
+        
+        .container{ 
+    margin: 0; 
+    position: absolute; 
+    top: 50%; 
+    -ms-transform: translateY(-25%);
+    transform: translateY(-55%); 
+}
+
+a{
+    text-align: center;
+    justify-content: center;
+}
+
+.btn{ 
+    width: 550px; 
+    height: 85px;
+}
+    </style>
+
+</body>
+</html>
